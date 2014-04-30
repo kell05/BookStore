@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:postgresql://localhost/booktown</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="connection.username">postgres</property>
+    <property name="connection.password">password</property>
+      <mapping class="com.bookstore.generated.AuthorsEntity"/>
+      <mapping class="com.bookstore.generated.BookBackupEntity"/>
+      <mapping class="com.bookstore.generated.BookQueueEntity"/>
+      <mapping class="com.bookstore.generated.BooksEntity"/>
+      <mapping class="com.bookstore.generated.CustomersEntity"/>
+      <mapping class="com.bookstore.generated.DailyInventoryEntity"/>
+      <mapping class="com.bookstore.generated.DistinguishedAuthorsEntity"/>
+      <mapping class="com.bookstore.generated.EditionsEntity"/>
+      <mapping class="com.bookstore.generated.EmployeesEntity"/>
+      <mapping class="com.bookstore.generated.MoneyExampleEntity"/>
+      <mapping class="com.bookstore.generated.MyListEntity"/>
+      <mapping class="com.bookstore.generated.NumericValuesEntity"/>
+      <mapping class="com.bookstore.generated.PublishersEntity"/>
+      <mapping class="com.bookstore.generated.RecentShipmentsEntity"/>
+      <mapping class="com.bookstore.generated.SchedulesEntity"/>
+      <mapping class="com.bookstore.generated.ShipmentsEntity"/>
+      <mapping class="com.bookstore.generated.StatesEntity"/>
+      <mapping class="com.bookstore.generated.StockEntity"/>
+      <mapping class="com.bookstore.generated.StockBackupEntity"/>
+      <mapping class="com.bookstore.generated.StockViewEntity"/>
+      <mapping class="com.bookstore.generated.SubjectsEntity"/>
+      <mapping class="com.bookstore.generated.TextSortingEntity"/>
+      <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
